@@ -3,31 +3,32 @@ use employee_tracker_db;
 INSERT INTO department
     (name)
 VALUES
+    ('Marketing'),
     ('Sales'),
-    ('Engineering'),
-    ('Finance'),
-    ('Legal');
+    ('Legal'),
+    ('Advertising');
 
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('Sales Lead', 100000, 1),
-    ('Salesperson', 80000, 1),
-    ('Lead Engineer', 150000, 2),
-    ('Software Engineer', 120000, 2),
-    ('Account Manager', 160000, 3),
-    ('Accountant', 125000, 3),
+    ('Marketing Lead', 200000, 1),
+    ('Salesperson', 75000, 2),
+    ('Legal Secretary', 90000, 3),
+    ('Advertising Sales Lead', 100000, 4),
+    ('Marketing Assistant', 55000, 1),
+    ('Front Desk Associate Sales', 45000, 2),
     ('Legal Team Lead', 250000, 4),
     ('Lawyer', 190000, 4);
 
 INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
 VALUES
-    ('John', 'Doe', 1, NULL),
-    ('Mike', 'Chan', 2, 1),
-    ('Ashley', 'Rodriguez', 3, NULL),
-    ('Kevin', 'Tupik', 4, 3),
-    ('Kunal', 'Singh', 5, NULL),
-    ('Malia', 'Brown', 6, 5),
-    ('Sarah', 'Lourd', 7, NULL),
-    ('Tom', 'Allen', 8, 7);
+    ('Pete', 'Smith', 1, NULL),
+    ('Martha', 'Young', 2, 1),
+    ('Ashton', 'Prompter', 3, NULL),
+    ('Kristy', 'Turner', 4, 3),
+    ('Jacob', 'Smythe', 5, NULL),
+    ('Kalia', 'Brown', 6, 5),
+    ('Sojurn', 'Marshall', 7, NULL),
+    ('Tamika', 'Lee', 8, 7);
+    
